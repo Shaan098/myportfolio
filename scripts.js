@@ -249,7 +249,6 @@ function renderSkills(category = 'all') {
             <div class="skill-progress">
                 <div class="skill-progress-bar" style="width: 0%"></div>
             </div>
-            <div class="skill-level">${skill.level}%</div>
         `;
         skillsGrid.appendChild(skillCard);
 
