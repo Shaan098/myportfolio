@@ -241,9 +241,10 @@ function renderSkills(category = 'all') {
         skillsToShow = skillsData[category] || [];
     }
 
-    skillsToShow.forEach(skill => {
+    skillsToShow.forEach((skill, index) => {
         const skillCard = document.createElement('div');
         skillCard.className = 'skill-card';
+        skillCard.style.animationDelay = `${index * 0.1}s`;
         skillCard.innerHTML = `
             <h4><i class="fas fa-code-branch"></i> ${skill.name}</h4>
             <div class="skill-progress">
@@ -283,10 +284,11 @@ function renderProjects(category = 'all') {
         ? projectsData 
         : projectsData.filter(p => p.category === category);
 
-    filteredProjects.forEach(project => {
+    filteredProjects.forEach((project, index) => {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         projectCard.setAttribute('data-color', project.color);
+        projectCard.style.animationDelay = `${index * 0.15}s`;
         projectCard.innerHTML = `
             <div class="project-header">${project.image}</div>
             <div class="project-content">

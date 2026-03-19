@@ -417,6 +417,7 @@ body.dark-mode .stat-label {
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(14, 165, 233, 0.5);
+    animation: glowBright 1.5s ease-in-out infinite;
 }
 
 .btn-secondary {
@@ -429,6 +430,7 @@ body.dark-mode .stat-label {
     background: var(--primary);
     color: white;
     transform: translateY(-3px);
+    animation: bounceScale 0.6s ease-out;
 }
 
 .btn-ghost {
@@ -564,6 +566,13 @@ body.dark-mode .about-text p {
     background: white;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    animation: fadeInScale 0.6s ease-out;
+    transition: all 0.3s;
+}
+
+.info-card:hover {
+    animation: bounceScale 0.6s ease-out;
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
 }
 
 body.dark-mode .info-card {
@@ -750,6 +759,7 @@ body.dark-mode .project-filter-btn {
     border-left: 4px solid var(--primary);
     transition: all 0.3s;
     box-shadow: var(--shadow);
+    animation: slideInLeft 0.5s ease-out;
 }
 
 body.dark-mode .skill-card {
@@ -758,8 +768,9 @@ body.dark-mode .skill-card {
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.3);
+    animation: bounceScale 0.6s ease-out;
 }
 
 .skill-card h4 {
@@ -903,6 +914,7 @@ body.dark-mode .projects-section {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
+    animation: slideInUp 0.5s ease-out;
 }
 
 body.dark-mode .project-card {
@@ -911,8 +923,9 @@ body.dark-mode .project-card {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.3);
+    animation: glowPulse 1.5s ease-in-out infinite;
 }
 
 body.dark-mode .project-card:hover {
@@ -1074,6 +1087,7 @@ body.dark-mode .experience-section {
     border-left: 4px solid var(--primary);
     box-shadow: var(--shadow);
     transition: all 0.3s;
+    animation: slideInLeft 0.6s ease-out;
 }
 
 body.dark-mode .experience-card {
@@ -1183,6 +1197,7 @@ body.dark-mode .achievements-section {
     box-shadow: var(--shadow);
     border-top: 4px solid var(--primary);
     transition: all 0.3s;
+    animation: scaleIn 0.6s ease-out;
 }
 
 body.dark-mode .achievement-card {
@@ -1191,8 +1206,9 @@ body.dark-mode .achievement-card {
 }
 
 .achievement-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.2);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.3);
+    animation: elasticBounce 0.6s ease-out;
 }
 
 .achievement-icon {
@@ -1276,6 +1292,7 @@ body.dark-mode .certifications-section {
     border-left: 4px solid #10b981;
     box-shadow: var(--shadow);
     transition: all 0.3s;
+    animation: slideInRight 0.6s ease-out;
 }
 
 body.dark-mode .cert-card {
@@ -1284,8 +1301,9 @@ body.dark-mode .cert-card {
 }
 
 .cert-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-left-color: var(--primary);
+    animation: bounceScale 0.6s ease-out;
 }
 
 .cert-icon {
@@ -1951,6 +1969,335 @@ body.dark-mode .chat-input {
 .chat-send:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* ============================================
+   ENHANCED KEYFRAME ANIMATIONS
+   ============================================ */
+
+/* Card Entrance with Stagger */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow Effects */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(14, 165, 233, 0.6);
+    }
+}
+
+@keyframes glowBright {
+    0% {
+        box-shadow: 0 0 5px rgba(14, 165, 233, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(14, 165, 233, 0.5);
+    }
+}
+
+/* Scale & Bounce */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes elasticBounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Rotation Effects */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Shake Effects */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+}
+
+/* Shimmer/Sparkle Effect */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Flip Animation */
+@keyframes flipInX {
+    from {
+        opacity: 0;
+        transform: perspective(400px) rotateX(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+@keyframes flipInY {
+    from {
+        opacity: 0;
+        transform: perspective(400px) rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+/* Zoom Effects */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Color Pulse */
+@keyframes colorPulse {
+    0% {
+        color: var(--primary);
+    }
+    50% {
+        color: var(--secondary);
+    }
+    100% {
+        color: var(--primary);
+    }
+}
+
+/* Background Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fade Variations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutScale {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* Swipe Effects */
+@keyframes swipeInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes swipeInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Mobile Responsive */
