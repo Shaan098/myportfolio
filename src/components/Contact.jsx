@@ -7,6 +7,9 @@ function Contact() {
     message: ''
   })
 
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({
@@ -17,9 +20,18 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+    setLoading(true)
+
+    // Simulate form submission
+    setTimeout(() => {
+      setLoading(false)
+      setSubmitted(true)
+      setFormData({ name: '', email: '', message: '' })
+      
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 4000)
+    }, 1500)
   }
 
   return (
@@ -75,6 +87,13 @@ function Contact() {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
+            {submitted && (
+              <div className="form-success">
+                <i className="fas fa-check-circle"></i>
+                <p>Thank you! Your message has been sent successfully.</p>
+              </div>
+            )}
+
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input 
@@ -83,6 +102,7 @@ function Contact() {
                 name="name" 
                 value={formData.name}
                 onChange={handleChange}
+                placeholder="Your name"
                 required 
               />
             </div>
@@ -95,6 +115,7 @@ function Contact() {
                 name="email" 
                 value={formData.email}
                 onChange={handleChange}
+                placeholder="your@email.com"
                 required 
               />
             </div>
@@ -107,11 +128,24 @@ function Contact() {
                 rows="5" 
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Your message here..."
                 required
               ></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary" disabled={loading}>
+              {loading ? (
+                <>
+                  <span className="loader"></span>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <i className="fas fa-paper-plane"></i>
+                  Send Message
+                </>
+              )}
+            </button>
           </form>
         </div>
       </div>

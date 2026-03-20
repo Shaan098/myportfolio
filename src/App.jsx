@@ -4,10 +4,10 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -32,9 +32,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Experience />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }

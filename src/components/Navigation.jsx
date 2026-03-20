@@ -22,7 +22,6 @@ function Navigation({ toggleTheme }) {
             <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="nav-link">About</a>
             <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }} className="nav-link">Skills</a>
             <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} className="nav-link">Projects</a>
-            <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }} className="nav-link">Experience</a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="nav-link">Contact</a>
           </div>
 
