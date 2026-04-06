@@ -37,7 +37,7 @@ A modern, minimalist developer portfolio built with HTML, CSS, and JavaScript fe
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/myportfolio.git
+   git clone https://github.com/Shaan098/myportfolio.git
    cd myportfolio
    ```
 
