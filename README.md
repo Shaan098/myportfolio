@@ -166,6 +166,22 @@ A: Yes! Since it's pure HTML/CSS/JavaScript, it works on any static hosting serv
 - Point your domain to the hosting provider
 - Site is immediately accessible
 
+## Accessibility
+
+This portfolio follows web accessibility best practices:
+
+- **Semantic HTML** - Proper heading hierarchy and semantic elements
+- **Color Contrast** - Text meets WCAG AA standards for readability
+- **Keyboard Navigation** - All interactive elements are keyboard accessible
+- **Reduced Motion** - Respects `prefers-reduced-motion` system preference
+- **Screen Reader Support** - Proper ARIA labels and alt text
+
+**Improve Accessibility Further:**
+- Add `aria-label` attributes to interactive elements
+- Include descriptive `alt` text for any images
+- Test with screen readers like NVDA or JAWS
+- Verify keyboard tab order through all sections
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
