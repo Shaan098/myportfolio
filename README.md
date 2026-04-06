@@ -55,6 +55,23 @@ A modern, minimalist developer portfolio built with HTML, CSS, and JavaScript fe
 2. Open `index.html` in your browser
 3. Enjoy the interactive portfolio experience!
 
+## Advanced Styling
+
+### Custom Cursor Colors
+
+The cursor uses two elements track your movement:
+- **Inner dot** - Main cursor position indicator
+- **Outer ring** - Larger hover area for interactive feedback
+
+Both change color on hover, enhancing the interactive feel of the page.
+
+### Typography System
+
+The portfolio uses a three-font system for optimal hierarchy:
+- `Space Mono` - Code/technical elements
+- `Bebas Neue` - Large display text
+- `DM Sans` - Body content and descriptions
+
 ## Customization
 
 You can customize the portfolio by editing:
