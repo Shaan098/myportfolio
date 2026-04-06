@@ -126,6 +126,23 @@ Have improvements or bug fixes? Feel free to:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## FAQ
+
+**Q: Can I use this template for my own portfolio?**
+A: Absolutely! The template is designed to be forked and customized. Just update the content and colors to match your brand.
+
+**Q: How do I add more sections to the portfolio?**
+A: Edit the HTML in `portfolio.html`. Each section follows a consistent structure with semantic HTML elements.
+
+**Q: Is this portfolio mobile-friendly?**
+A: Yes! The responsive layout adapts to all screen sizes. Test on different devices to ensure everything looks great.
+
+**Q: How can I disable the custom cursor?**
+A: Remove or comment out the cursor-related CSS and JavaScript in `portfolio.html`.
+
+**Q: Can I use this with other hosting platforms?**
+A: Yes! Since it's pure HTML/CSS/JavaScript, it works on any static hosting service.
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
