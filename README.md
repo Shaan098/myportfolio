@@ -70,6 +70,22 @@ Works best in modern browsers that support:
 - CSS Grid and Flexbox
 - ES6+ JavaScript
 
+## Project Structure
+
+```
+myportfolio/
+├── index.html          # Redirect landing page
+├── portfolio.html      # Main portfolio with all content
+└── README.md          # This documentation
+```
+
+## Performance Tips
+
+- The custom cursor is optimized with CSS `mix-blend-mode` for smooth animations
+- Canvas background uses requestAnimationFrame for optimal performance
+- CSS transitions are GPU-accelerated for smooth interactions
+- Minimal JavaScript keeps the page lightweight and fast
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
