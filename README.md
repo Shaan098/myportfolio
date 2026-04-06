@@ -26,6 +26,29 @@ A modern, minimalist developer portfolio built with HTML, CSS, and JavaScript fe
 - `portfolio.html` - Main portfolio page with full content and styling
 - `README.md` - Project documentation
 
+## Tech Stack
+
+- **HTML5** - Semantic markup and Canvas API
+- **CSS3** - Advanced layout with Grid, Flexbox, and custom properties
+- **Vanilla JavaScript** - No frameworks, pure ES6+ for performance
+- **Google Fonts** - Space Mono, Bebas Neue, and DM Sans typography
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/myportfolio.git
+   cd myportfolio
+   ```
+
+2. **Open in browser:**
+   - Double-click `index.html`, or
+   - Use a local server: `python -m http.server 8000`
+   - Then visit `http://localhost:8000`
+
+3. **Start exploring!**
+   The portfolio loads with a smooth animation and is ready to navigate
+
 ## Getting Started
 
 1. Clone or download this repository
