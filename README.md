@@ -209,6 +209,20 @@ Boost your portfolio's search engine visibility:
 - Compress images for faster delivery
 - Enable GZIP compression on server
 
+## Inspiration & Resources
+
+Get ideas and learn from these resources:
+
+- **Design Inspiration** - Check out [Dribbble](https://dribbble.com), [Behance](https://behance.net), and [awwwards](https://awwwards.com)
+- **Color Tools** - Use [Coolors.co](https://coolors.co) or [Color Hunt](https://colorhunt.co) for palettes
+- **Typography** - Explore [Google Fonts](https://fonts.google.com) and [Font Pair](https://www.fontpair.co)
+- **Learning** - [MDN Web Docs](https://developer.mozilla.org), [CSS-Tricks](https://css-tricks.com), [Dev.to](https://dev.to)
+- **Animation** - Study [CodePen](https://codepen.io) and [Observable](https://observablehq.com) projects
+
+## Credits
+
+Built with modern web technologies and inspired by contemporary design principles. Special thanks to the open-source community for incredible tools and resources.
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
