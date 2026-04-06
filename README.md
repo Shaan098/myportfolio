@@ -182,6 +182,33 @@ This portfolio follows web accessibility best practices:
 - Test with screen readers like NVDA or JAWS
 - Verify keyboard tab order through all sections
 
+## SEO Optimization
+
+Boost your portfolio's search engine visibility:
+
+### Meta Tags
+- Update `<title>` tag to include your name and key skills
+- Add descriptive `<meta name="description">` tag
+- Use `<meta name="keywords">` for relevant terms
+
+### Open Graph
+```html
+<meta property="og:title" content="Your Name — Portfolio">
+<meta property="og:description" content="Brief description">
+<meta property="og:image" content="preview-image.png">
+```
+
+### Structured Data
+- Add JSON-LD schema for better search results
+- Use `application/ld+json` for organization or person schema
+- Help search engines understand your content
+
+### Performance
+- Fast loading improves SEO ranking
+- Minimize CSS and JavaScript files
+- Compress images for faster delivery
+- Enable GZIP compression on server
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
