@@ -143,6 +143,29 @@ A: Remove or comment out the cursor-related CSS and JavaScript in `portfolio.htm
 **Q: Can I use this with other hosting platforms?**
 A: Yes! Since it's pure HTML/CSS/JavaScript, it works on any static hosting service.
 
+## Deployment & Hosting
+
+### GitHub Pages (Free)
+1. Push your code to a GitHub repository
+2. Go to Settings → Pages
+3. Select `main` branch as source
+4. Your portfolio will be live at `https://yourusername.github.io/myportfolio`
+
+### Netlify (Free & Easy)
+1. Connect your GitHub repository to Netlify
+2. Set build command to `(none)` - no build needed
+3. Deploy! Your site is instantly live
+
+### Vercel (Free & Fast)
+1. Import your GitHub repository
+2. Vercel auto-detects static hosting
+3. One-click deployment with custom domain support
+
+### Traditional Hosting
+- Upload files via FTP to your web server
+- Point your domain to the hosting provider
+- Site is immediately accessible
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
