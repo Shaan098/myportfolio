@@ -103,6 +103,29 @@ myportfolio/
 - CSS transitions are GPU-accelerated for smooth interactions
 - Minimal JavaScript keeps the page lightweight and fast
 
+## Troubleshooting
+
+**Cursor not visible?**
+- Some browsers may require hardware acceleration enabled
+- Try a different browser or update your graphics drivers
+
+**Canvas animation stuttering?**
+- Disable other resource-intensive browser extensions
+- Ensure hardware acceleration is enabled in browser settings
+
+**Fonts not loading?**
+- Check your internet connection for Google Fonts CDN
+- Fallback stack will display system fonts if unavailable
+
+## Contributing
+
+Have improvements or bug fixes? Feel free to:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
 Feel free to use this portfolio template as inspiration for your own projects!
